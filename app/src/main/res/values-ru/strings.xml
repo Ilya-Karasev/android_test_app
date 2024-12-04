@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_description">Бесплатный мессенджер для студентов</string>
+    <string name="tv_continue">Кликни для продолжения</string>
+    <string name="tv_sign_in_title">Вход в систему</string>
+    <string name="et_email">Электронная почта</string>
+    <string name="et_password">Пароль</string>
+    <string name="tv_register">Нет аккаунта? Зарегистрируйся</string>
+    <string name="tv_sign_in_button">Войти</string>
+    <string name="logout">Выйти</string>
+    <string name="search">Поиск</string>
+    <string name="profile">Профиль</string>
+    <string name="tv_chats_title">Чаты и сообщения</string>
+    <string name="tv_sender_name">Имя отправителя</string>
+    <string name="tv_last_message">Последнее сообщение</string>
+    <string name="tv_time">Время</string>
+    <string name="tv_profile_title">Твой профиль</string>
+    <string name="tv_email">Эл. почта: example@mail.com</string>
+    <string name="tv_password">Пароль: ********</string>
+    <string name="btn_home">В главное меню</string>
+    <string name="tv_sign_up_title">Регистрация</string>
+    <string name="et_username">Имя пользователя</string>
+    <string name="et_sign_up_email">Адрес электронной почты</string>
+    <string name="et_sign_up_password">Пароль</string>
+    <string name="btn_register">Зарегистрироваться</string>
+    <string name="tv_return">Вернуться</string>
+    <string name="et_sign_in_password">Пароль</string>
+    <string name="et_sign_in_email">Электронная почта</string>
+    <string name="characters_title">Поиск собеседников</string>
+    <string name="tvName">Имя :</string>
+    <string name="tvCulture">Культура :</string>
+    <string name="tvBorn">Дата рождения :</string>
+    <string name="tvTitles">Титулы :</string>
+    <string name="tvAliases">Прозвища :</string>
+    <string name="tvPlayedBy">Актёр / актриса :</string>
+    <string name="btnPreviousPage">Предыдущая страница</string>
+    <string name="btnNextPage">Следующая страница</string>
+    <string name="chats">Чаты</string>
+    <string name="settings_title">Настройки</string>
+</resources>

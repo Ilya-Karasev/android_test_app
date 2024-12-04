@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Test App</string>
+    <string name="onboard" translatable="false">GoodLine</string>
+    <string name="app_description">Free Student Messenger</string>
+    <string name="tv_continue">Click to continue</string>
+    <string name="tv_sign_in_title">Authorization</string>
+    <string name="et_email">Email</string>
+    <string name="et_password">Password</string>
+    <string name="tv_register">No account? Sign in</string>
+    <string name="tv_sign_in_button">Log In</string>
+    <string name="logout">Exit</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="tv_chats_title">Your messeges</string>
+    <string name="tv_sender_name">Sender\'s name</string>
+    <string name="tv_last_message">Last message</string>
+    <string name="tv_time">Time</string>
+    <string name="tv_profile_title">Your profile</string>
+    <string name="tv_username" translatable="false">Test User</string>
+    <string name="tv_email">Email: example@mail.com</string>
+    <string name="tv_password">Password: ********</string>
+    <string name="btn_home">To Main Menu</string>
+    <string name="tv_sign_up_title">Registration</string>
+    <string name="et_username">Username</string>
+    <string name="et_sign_up_email">Email</string>
+    <string name="et_sign_up_password">Password</string>
+    <string name="btn_register">Register</string>
+    <string name="tv_return">Return</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="et_sign_in_password">Password</string>
+    <string name="et_sign_in_email">Email</string>
+    <string name="characters_title">Search</string>
+    <string name="tvName">Name :</string>
+    <string name="tvCulture">Culture :</string>
+    <string name="tvBorn">Born :</string>
+    <string name="tvTitles">Titles :</string>
+    <string name="tvAliases">Aliases :</string>
+    <string name="tvPlayedBy">Played by :</string>
+    <string name="btnPreviousPage">Предыдущая</string>
+    <string name="btnNextPage">Следующая</string>
+    <string name="chats">Чаты</string>
+    <string name="settings_title">Настройки</string>
+</resources>

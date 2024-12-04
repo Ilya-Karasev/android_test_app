@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SettingsFragment">
+
+    <!-- Верхний прямоугольник с заголовком настроек -->
+    <TextView
+        android:id="@+id/characters_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_rectangle"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/settings_title"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Настройка "Язык" с переключателем -->
+    <TextView
+        android:id="@+id/tv_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Язык"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/characters_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_language"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_language"
+        app:layout_constraintTop_toBottomOf="@id/characters_title">
+
+        <RadioButton
+            android:id="@+id/radio_button_ru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="RU" />
+
+        <RadioButton
+            android:id="@+id/radio_button_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EN" />
+    </RadioGroup>
+
+    <!-- Настройка "Тема" с переключателем -->
+    <TextView
+        android:id="@+id/tv_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Тема"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_language"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_theme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_theme"
+        app:layout_constraintTop_toBottomOf="@id/tv_language">
+
+        <RadioButton
+            android:id="@+id/radio_button_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Светлая" />
+
+        <RadioButton
+            android:id="@+id/radio_button_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тёмная" />
+
+        <RadioButton
+            android:id="@+id/radio_button_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Устройство" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Push-уведомления"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_theme" />
+
+    <ToggleButton
+        android:id="@+id/toggle_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@color/gray"
+        android:textColor="@android:color/white"
+        android:textOff="ВЫКЛ"
+        android:textOn="ВКЛ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_notifications"
+        app:layout_constraintTop_toBottomOf="@id/radio_group_theme"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_change_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/purple"
+        android:text="Изменить настройки"
+        app:layout_constraintBottom_toTopOf="@id/v_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_file_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Статус файла с персонажами"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/toggle_notifications"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_delete_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Удалить"
+        app:layout_constraintTop_toBottomOf="@id/tv_file_status"
+        app:layout_constraintStart_toStartOf="parent"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/btn_restore_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Восстановить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_delete_file"
+        app:layout_constraintTop_toTopOf="@id/btn_delete_file" />
+
+    <Button
+        android:id="@+id/btn_clear_database"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_margin="16dp"
+        android:text="Очистить локальную базу данных"
+        android:enabled="true"
+        android:backgroundTint="@color/blue"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btn_delete_file" />
+
+
+    <!-- Нижний навигационный блок -->
+    <FrameLayout
+        android:id="@+id/v_back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="1">
+
+        <View
+            android:id="@+id/v_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_rectangle"
+            android:padding="16dp"
+            android:rotation="180" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/tv_return"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

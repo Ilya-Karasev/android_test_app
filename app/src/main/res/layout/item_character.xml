@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_rectangle_gray_full">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvName"
+            android:textColor="@color/colorDividerLight"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvCulture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDividerLight"
+            android:text="@string/tvCulture"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvBorn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDividerLight"
+            android:text="@string/tvBorn"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvTitles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDividerLight"
+            android:text="@string/tvTitles"
+            android:textStyle="bold"  />
+        <TextView
+            android:id="@+id/tvAliases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDividerLight"
+            android:text="@string/tvAliases"
+            android:textStyle="bold"  />
+        <TextView
+            android:id="@+id/tvPlayedBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDividerLight"
+            android:text="@string/tvPlayedBy"
+            android:textStyle="bold"  />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorDivider" />
+
+</LinearLayout>
